@@ -37,6 +37,10 @@ module.exports = {
           background_color: '#202124',
           crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
           display: "fullscreen",
+          map: f => {
+                       f.path = f.path.replace(/^auto/,'');
+                       return f;
+                     },
           icons: [
             {
               src: path.resolve('static/icons/maskable_icon_x512.png'),
