@@ -1,13 +1,13 @@
 {
   "icons": [
     {
-      "src": "auto/icon_512x512.b11ad767099d1e1762b766c95a5dc1e4.png",
+      "src": "icon_512x512.b11ad767099d1e1762b766c95a5dc1e4.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "auto/icon_512x512.b11ad767099d1e1762b766c95a5dc1e4.png",
+      "src": "icon_512x512.b11ad767099d1e1762b766c95a5dc1e4.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
