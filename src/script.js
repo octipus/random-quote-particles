@@ -188,7 +188,7 @@ tick()
 async function registerSW() {
   if('serviceWorker' in navigator) {
     try {
-      await navigator.serviceWorker.register('../static/sw.js');
+      await navigator.serviceWorker.register('/sw.js');
       console.log("success")
     } catch (e) {
       console.log('SW registration fail');
