@@ -112,10 +112,6 @@ window.addEventListener('resize', () =>
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 
-window.addEventListener('load', () => {
-  registerSW();
-})
-
 /**
  * Camera
  */
@@ -184,8 +180,7 @@ const tick = () =>
 
 tick()
 
-
-async function registerSW() {
+// service worker
    if ('serviceWorker' in navigator) {
      window.addEventListener('load', () => {
        navigator.serviceWorker.register('/service-worker.js').then(registration => {
@@ -195,4 +190,3 @@ async function registerSW() {
        });
      });
    }
-}
