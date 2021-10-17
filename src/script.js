@@ -186,12 +186,13 @@ tick()
 
 
 async function registerSW() {
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/random-quote-particles/sw.js').then(function(registration) {
-      console.log('ServiceWorker registration successful with scope:',  registration.scope);
-    }).catch(function(error) {
-      console.log('ServiceWorker registration failed:', error);
-    });
-  }
-
+   if ('serviceWorker' in navigator) {
+     window.addEventListener('load', () => {
+       navigator.serviceWorker.register('/service-worker.js').then(registration => {
+         console.log('SW registered: ', registration);
+       }).catch(registrationError => {
+         console.log('SW registration failed: ', registrationError);
+       });
+     });
+   }
 }

@@ -3,7 +3,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "start": "http-server dist"
   },
   "dependencies": {
     "@babel/core": "^7.13.1",
@@ -28,5 +29,9 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.2",
+    "workbox-webpack-plugin": "^6.3.0"
   }
 }
