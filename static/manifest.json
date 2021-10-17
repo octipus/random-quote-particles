@@ -1,7 +1,7 @@
 random-quote-particles/random-quote-particles/{
   "short_name": "Random pArticles Generator",
   "name": "Random Quote Generator with particles",
-  "start_url": "/random-quote-particles/random-quote-particles/",
+  "start_url": "/random-quote-particles/",
   "icons": [
     {
       "src": "icons/maskable_icon_x512.png",
