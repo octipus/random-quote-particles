@@ -1,1 +1,1 @@
-self.addEventListener("install",(e=>{console.log("[Service Worker] Install")}));
+const cacheName="particles",staticAssets=["./","./index.html","./styles.css","./script.js","./newsApi.js","./news-article.js"];self.addEventListener("install",(async s=>{const e=await caches.open(cacheName);return await e.addAll(staticAssets),self.skipWaiting()}));
