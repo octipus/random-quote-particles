@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
     entry: path.resolve(__dirname, '../src/script.js'),
@@ -29,6 +30,28 @@ module.exports = {
            clientsClaim: true,
            skipWaiting: true,
          }),
+         new WebpackPwaManifest({
+          name: 'Random pArticles Generator',
+          short_name: 'Particles',
+          description: 'Random motivational quotes with particles background',
+          background_color: '#202124',
+          crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+          display: "fullscreen",
+          icons: [
+            {
+              src: path.resolve('static/icons/maskable_icon_x512.png'),
+              type: "image/png",
+              sizes: "512x512",
+              purpose: "maskable"
+            },
+            {
+              src: path.resolve('static/icons/maskable_icon_x512.png'),
+              type: "image/png",
+              sizes: "512x512",
+              purpose: "any"
+            }
+          ]
+        }),
         new MiniCSSExtractPlugin()
     ],
     module:
