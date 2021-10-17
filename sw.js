@@ -1,10 +1,9 @@
 const cacheName = 'particles';
 const staticAssets = [
-  './',
+  './*',
   './index.html',
-  './styles.css',
-  './script.js',
-  '../static'
+  './main.css'
+  './cross.png'
 ];
 
 self.addEventListener('install', async e => {
