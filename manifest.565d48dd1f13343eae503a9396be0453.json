@@ -1,0 +1,23 @@
+{
+  "icons": [
+    {
+      "src": "auto/icon_512x512.b11ad767099d1e1762b766c95a5dc1e4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "auto/icon_512x512.b11ad767099d1e1762b766c95a5dc1e4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "name": "Random pArticles Generator",
+  "short_name": "Particles",
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "start_url": ".",
+  "description": "Random motivational quotes with particles background",
+  "background_color": "#202124"
+}
