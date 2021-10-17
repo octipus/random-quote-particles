@@ -1,0 +1,24 @@
+{
+  "short_name": "Random pArticles Generator",
+  "name": "Random Quote Generator with particles",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "icons/maskable_icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/maskable_icon_x512sq.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "background_color": "#202124",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#202124",
+  "description": "Random Quote Generator with particles"
+}

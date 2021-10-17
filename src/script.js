@@ -46,7 +46,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.TorusKnotGeometry( 10, 3, 200, 16 );
+const geometry = new THREE.TorusKnotGeometry( 10, 3, 400, 90 );
 
 const particlesGeometry = new THREE.BufferGeometry;
 const particlesCnt = 5000;
@@ -112,6 +112,10 @@ window.addEventListener('resize', () =>
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 
+window.addEventListener('load', () => {
+  registerSW();
+})
+
 /**
  * Camera
  */
@@ -134,7 +138,7 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-renderer.setClearColor(new THREE.Color('#202020'), )
+renderer.setClearColor(new THREE.Color('#202124'), )
 
 // mouseY
 document.addEventListener('mousemove', animateParticles)
@@ -179,3 +183,10 @@ const tick = () =>
 }
 
 tick()
+
+
+async function registerSW() {
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+}
