@@ -187,7 +187,6 @@ tick()
 
 async function registerSW() {
   if (navigator.serviceWorker) {
-    console.log("exists")
     navigator.serviceWorker.register('sw.js').then(function(registration) {
       console.log('ServiceWorker registration successful with scope:',  registration.scope);
     }).catch(function(error) {
