@@ -5,6 +5,7 @@ const path = require('path')
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 
+
 module.exports = {
     entry: path.resolve(__dirname, '../src/script.js'),
     output:
